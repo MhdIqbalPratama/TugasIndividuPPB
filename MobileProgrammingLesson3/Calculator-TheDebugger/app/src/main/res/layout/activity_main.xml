@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/operand_one_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_operand_one_hint"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/operand_two_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/type_operand_two_hint"
+        android:inputType="numberDecimal" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp">
+
+        <Button
+            android:id="@+id/operation_add_btn"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:onClick="onAdd"
+            android:text="@string/add_operation_text"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/operation_sub_btn"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/operation_add_btn"
+            android:layout_toRightOf="@id/operation_add_btn"
+            android:onClick="onSub"
+            android:text="@string/sub_operation_text"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/operation_div_btn"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/operation_mul_btn"
+            android:onClick="onDiv"
+            android:text="@string/div_operation_text"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/operation_mul_btn"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="25dp"
+            android:layout_toEndOf="@id/operation_sub_btn"
+            android:onClick="onMul"
+            android:text="@string/mul_operation_text"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif-thin"
+        android:text="Hasil :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+
+    <TextView
+        android:id="@+id/operation_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin" />
+
+</LinearLayout>

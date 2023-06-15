@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minggu 8</string>
+
+    <!-- EditText hint -->
+    <string name="edit_text_hint">Masukkan Teks</string>
+
+    <!-- Button labels -->
+    <string name="text_button_label">Tampilkan Teks</string>
+    <string name="check_button_label">Cek Status</string>
+    <string name="radio_buttons_button_label">Cek Pilihan</string>
+    <string name="spinner_button_label">Check Pilihan</string>
+
+    <!-- CheckBox label -->
+    <string name="check_box_label">Cek</string>
+
+    <!-- RadioButtons options -->
+    <string name="radio_button_option1">Jus Mangga</string>
+    <string name="radio_button_option2">Jus Apel</string>
+    <string name="radio_button_option3">Jus Jeruk</string>
+
+    <!-- Spinner options -->
+    <string-array name="spinner_options">
+        <item>Ayam Bakar</item>
+        <item>Ikan Bakar</item>
+        <item>Nasi Goreng</item>
+        <item>Bebek Carok</item>
+        <item>Tuna</item>
+    </string-array>
+</resources>
